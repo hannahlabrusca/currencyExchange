@@ -1,5 +1,5 @@
-import { OnInit } from '@angular/core';
 import { Component } from '@angular/core';
+import { OnInit } from '@angular/core';
 import { CurrencyServiceService } from './currency-service.service';
 
 @Component({
@@ -8,7 +8,6 @@ import { CurrencyServiceService } from './currency-service.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'currencyExchange';
   currenciesArray: string[] = [];
   sCurr1: string = '';
   sCurr2: string = '';
@@ -17,6 +16,7 @@ export class AppComponent implements OnInit {
   curr1Val: number = 0;
   curr2Val: number = 0;
   basicCurrency: number = 0;
+  title = 'currencyExchange';
 
   constructor(private _currencyService: CurrencyServiceService) {}
 
